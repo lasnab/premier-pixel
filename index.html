@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Premier Pixel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2f6e569451.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="topnav" id="responsiveTopNav">
+      <a href="#home"> <img src="./logo.png" width="220" height="55" /></a>
+      <div class="topnav-links">
+        <a
+          href="javascript:void(0);"
+          class="open-icon"
+          onclick="handleNavOpen()"
+        >
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <div id="overlayNav" class="overlay-nav">
+        <a
+          href="javascript:void(0)"
+          class="close-icon"
+          onclick="handleNavClose()"
+        >
+          <i class="fa-solid fa-x"></i>
+        </a>
+        <div class="overlay-nav-content">
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Hello World</h1>
+        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <!-- <a href="https://www.facebook.com/pixel-premier/" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
+        <a href="https://www.instagram.com/pixel-premier/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/pixel-premier/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- <a href="https://www.instagram.com/pixel-premier/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a> -->
+      </div>
+      <div class="footer-text">&copy; 2023 Premier Pixel. All Rights Reserved.</div>
+    </footer>
+    <script src="scripts.js"></script>
+    </div>
+  </body>
+</html>
