@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  overflow: hidden;
+}
+
+.typeform {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 500px;
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 786px) {
+  .typeform {
+    margin-top: 0;
+    min-height: 300px;
+    height: 70vh;
+  }
+}
