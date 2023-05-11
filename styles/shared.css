@@ -1,12 +1,11 @@
+/* https://studio.mockmagic.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 * {
   /* border: 0.1px dotted lightblue; */
-  /* overflow: hidden; */
+  overflow: hidden;
   color: white;
   -webkit-tap-highlight-color: transparent;
-}
-
-.hide {
-  display: none;
 }
 
 .topnav {
@@ -82,6 +81,32 @@
   padding-right: 8px;
 }
 
+.contact-cta-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #171717;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms ease-in;
+}
+
+.contact-cta-1:hover,
+.contact-cta-1:focus {
+  color: black;
+  background-color: rgb(241, 244, 247);
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -98,6 +123,8 @@ footer {
 
 .footer-links {
   padding-left: 12px;
+  /* Temp until ig is created */
+  display: none;
 }
 
 .footer-links a {
@@ -108,6 +135,7 @@ footer {
 }
 
 .footer-text {
+  padding-left: 12px;
   padding-right: 12px;
   color: white;
   font-size: 12px;
@@ -145,6 +173,21 @@ footer {
   }
 }
 
+.star {
+  height: 1px;
+  width: 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px white;
+  background: powderblue;
+  position: absolute;
+  z-index: -1;
+}
+
+.star.pulse {
+  animation: STAR 2s infinite;
+  -webkit-animation: STAR 2s infinite;
+}
+
 @-webkit-keyframes STAR {
   0% {
     background: powderblue;
@@ -178,39 +221,35 @@ footer {
   }
 }
 
-.star {
-  height: 1px;
-  width: 1px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px white;
-  background: powderblue;
-  position: absolute;
-  z-index: -1;
+.shimmer {
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  /* background: linear-gradient(
+        to right,
+        #e2e0b5 20%,
+        #44107a 30%,
+        #ff1361 70%,
+        #fff800 80%
+      ); */
+
+  background-size: 500% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: textFlow 8s linear infinite;
 }
 
-.star.pulse {
-  animation: STAR 2s infinite;
-  -webkit-animation: STAR 2s infinite;
-}
-
-.contact-cta-1 {
-  color: #ffffff;
-  background: #171717;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 10px 16px;
-  text-align: center;
-  text-decoration: none;
-  transition: 200ms ease-in;
-}
-
-.contact-cta-1:hover,
-.contact-cta-1:focus {
-  color: black;
-  background-color: white;
+@keyframes textFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
