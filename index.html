@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Premier Pixel</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <title>Premier Pixel</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/2f6e569451.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -37,39 +38,38 @@
       href="./favicon/safari-pinned-tab.svg"
       color="#150e0a"
     />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
+
+    <script
+      src="https://kit.fontawesome.com/2f6e569451.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="topnav" id="responsiveTopNav">
-      <a href="#home"> <img src="./logo.png" width="220" height="55" /></a>
+      <a href="./index.html">
+        <img src="./images/logo.png" width="220" height="55"
+      /></a>
       <div class="topnav-links">
         <a
           href="javascript:void(0);"
-          class="open-icon"
           onclick="handleNavOpen()"
+          id="open-nav-button"
         >
-          <i class="fa-sharp fa-solid fa-bars"></i>
+          <i class="fa-sharp fa-solid fa-bars open-icon"></i>
         </a>
         <!-- <a href="#about">About</a> -->
-        <a href="#contact"
+        <a href="./pages/contact.html"
           ><button class="contact-cta-1" role="button">
             LETS CREATE TOGETHER
           </button>
         </a>
       </div>
       <div id="overlayNav" class="overlay-nav">
-        <a
-          href="javascript:void(0)"
-          class="close-icon"
-          onclick="handleNavClose()"
-        >
-          <i class="fa-solid fa-x"></i>
+        <a href="javascript:void(0)" onclick="handleNavClose()">
+          <i class="fa-solid fa-x close-icon"></i>
         </a>
         <div class="overlay-nav-content">
-          <a href="#contact">Contact</a>
+          <a href="./pages/contact.html">Contact</a>
           <!-- <a href="#about">About</a> -->
         </div>
       </div>
@@ -102,7 +102,7 @@
           Discover your hidden brilliance with Premier Pixel. Let us help you
           uncover your potential and shine.
         </p>
-        <a href="#contact"
+        <a href="./pages/contact.html"
           ><button class="contact-cta-1" role="button">
             <span class="shimmer">REVEAL YOUR BRILLIANCE</span>
           </button></a
@@ -125,6 +125,6 @@
         &copy; 2023 Premier Pixel. All Rights Reserved.
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script type="text/javascript" src="./scripts.js"></script>
   </body>
 </html>
