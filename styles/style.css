@@ -21,7 +21,7 @@ body {
 }
 
 .cover-image {
-  background-image: url('./images/responsive-cut.png');
+  background-image: url('../images/responsive-cut.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
