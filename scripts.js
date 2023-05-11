@@ -1,4 +1,5 @@
 function handleNavOpen() {
+  document.getElementById('open-nav-button').style.display = 'none';
   var x = document.getElementById('overlayNav');
   if (x.className === 'overlay-nav') {
     x.className += ' responsive';
@@ -10,6 +11,7 @@ function handleNavClose() {
   if (x.className === 'overlay-nav responsive') {
     x.className = 'overlay-nav';
   }
+  document.getElementById('open-nav-button').style.display = 'block';
 }
 
 var NUMBER_OF_STARS = 115;
