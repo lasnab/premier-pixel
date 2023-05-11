@@ -1,0 +1,138 @@
+/* https://studio.mockmagic.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+.psuedobody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover-image-container {
+  flex: 1 0 auto;
+  height: 650px;
+  width: 1000px;
+  position: relative;
+}
+
+.cover-image {
+  background-image: url('./images/responsive-cut.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.services {
+  color: white;
+}
+
+.services ul {
+  list-style-type: none;
+}
+
+.tagline {
+  position: absolute;
+  top: 64px;
+  left: 42px;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.info-container {
+  align-self: flex-end;
+  padding-right: 12px;
+}
+
+.info-container div {
+  padding-top: 12px;
+}
+
+.info-container p {
+  color: rgb(189, 186, 186);
+}
+
+.shimmer {
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  /* background: linear-gradient(
+        to right,
+        #e2e0b5 20%,
+        #44107a 30%,
+        #ff1361 70%,
+        #fff800 80%
+      ); */
+
+  background-size: 500% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: textFlow 8s linear infinite;
+}
+
+@keyframes textFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 6s ease-out;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* .responsive-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .responsive-container {
+    width: 750px;
+  }
+}
+
+#responsive-illustration-img {
+  height: 100px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #responsive-illustration-img {
+    background-image: url('./images/responsive-mobile.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #responsive-illustration-img {
+    background-image: url('./images/responsive.png');
+  }
+} */
