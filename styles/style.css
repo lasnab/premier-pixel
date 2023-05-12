@@ -38,6 +38,7 @@ body {
 .info-description {
   font-size: 24px;
   font-weight: 400;
+  max-width: 1500px;
 }
 
 .info-services {
@@ -48,6 +49,10 @@ body {
   list-style: none;
   padding-left: 0;
   font-size: 16px;
+}
+
+.info-services-mobile {
+  display: none;
 }
 
 .info-hook {
@@ -131,14 +136,22 @@ body {
   }
 
   .info-services {
-    color: white;
+    display: none;
   }
 
-  .info-services ul {
+  .info-services-mobile {
+    display: block;
+  }
+
+  .info-services-mobile ul {
     text-align: center;
     list-style: none;
     padding-left: 0;
     font-size: 16px;
+  }
+
+  .info-services-mobile li {
+    padding-top: 4px;
   }
 
   .info-hook {
