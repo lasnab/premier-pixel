@@ -21,6 +21,38 @@
   padding-right: 24px;
 }
 
+.topnav-skip-links {
+  display: flex;
+}
+
+.cta-base {
+  width: 135px;
+}
+
+.skip-link-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: 200ms ease-in;
+}
+
+.skip-link-cta:hover,
+.skip-link-cta:focus {
+  color: #cf0d5e;
+}
+
 .topnav a {
   color: #f2f2f2;
   padding: 0px 16px;
@@ -86,12 +118,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: #171717;
+  color: black;
+  background: #ffffff;
   border-radius: 1px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   height: 40px;
   border: none;
   outline: none;
@@ -104,8 +136,8 @@
 
 .contact-cta-1:hover,
 .contact-cta-1:focus {
-  color: black;
-  background-color: rgb(241, 244, 247);
+  color: white;
+  background-color: rgb(52, 49, 49);
 }
 
 footer {
@@ -147,6 +179,10 @@ footer {
 
   .topnav .open-icon {
     display: block;
+  }
+
+  .skip-link-cta {
+    display: none;
   }
 
   .overlay-nav.responsive {
