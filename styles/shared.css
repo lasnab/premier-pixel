@@ -173,6 +173,10 @@ footer {
 }
 
 @media screen and (max-width: 786px) {
+  * {
+    overflow-y: scroll;
+  }
+
   .topnav a:not(:first-child) {
     display: none;
   }
