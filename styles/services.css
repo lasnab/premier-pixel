@@ -65,9 +65,18 @@
 }
 
 @media (max-width: 768px) {
+  * {
+    overflow-y: scroll;
+  }
+
   .psuedobody {
     margin: 0 auto;
     max-width: 90%;
+    margin-bottom: -200px;
+  }
+
+  footer {
+    border: 1px solid white;
   }
 
   .heading {
@@ -99,5 +108,9 @@
 
   .section-text {
     font-size: 14px;
+  }
+
+  .section-contact {
+    padding-bottom: 24px;
   }
 }
