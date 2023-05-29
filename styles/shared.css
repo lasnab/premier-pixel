@@ -150,8 +150,7 @@ footer {
   right: 0;
   height: 48px;
   width: 100%;
-
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: black;
 }
 
 .footer-links {
@@ -173,10 +172,6 @@ footer {
 }
 
 @media screen and (max-width: 786px) {
-  * {
-    overflow-y: scroll;
-  }
-
   .topnav a:not(:first-child) {
     display: none;
   }
