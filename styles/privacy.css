@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  overflow: scroll;
+  height: 100vh;
+  padding: 0 10px;
+}
+
+.container {
+  margin-bottom: 50px;
+}
